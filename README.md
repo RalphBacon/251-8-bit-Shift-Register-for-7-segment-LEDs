@@ -24,30 +24,7 @@ https://docs.rs-online.com/f9af/0900766b807e3cf6.pdf
 ► Arduino-speak **shiftOut** Arduino Command  
 https://www.arduino.cc/reference/en/language/functions/advanced-io/shiftout/  
 
-### Worked example:
-
-Display "4" on first digit. No decimal point (dp).
-
-"4" requires segments b,c,f,g  
-
-Bit pattern  
-abcdefgh  
-01100110  
-
-Only seven bits so terminate with "0" (or "1" if using the decimal point on pin 7 of the 74HC595).  
-
-01100110 is in decimal 102 so that is what we send to the device using shiftOut().  
-01100111 is in decimal 103 (decimal point) if required.  
-
-"6." requires segments a,c,d,e,f,g,h(dp)  
-So 10111111 is 6 with a decimal point = 191  
-Subtract one to remove the decimal point, ie 190.  
-
-Demo sketches right here in the GitHub!  
-
-
-
-
+### Demo sketches right here in the GitHub!  
 
 ► You can now support me by buying me a coffee!  
 https://buymeacoffee.com/ralphbacon  
